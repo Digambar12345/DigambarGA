@@ -7,9 +7,9 @@
 
 /* Body and Global Styles */
 body {
-    font-family: 'Roboto', sans-serif;
-    background: #1c1c1c; /* Dark background for a sleek look */
-    color: #e0e0e0; /* Light text for contrast */
+    font-family: 'Poppins', sans-serif; /* Updated font for a modern, clean look */
+    background: #f4f4f9; /* Light background for a more open feel */
+    color: #333; /* Dark text for better readability */
     line-height: 1.6;
     height: 100vh;
     margin: 0;
@@ -18,7 +18,7 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #111; /* Dark header background */
+    background-color: #1f2a3d; /* Deep blue header background */
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -26,20 +26,20 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     transition: all 0.3s ease;
 }
 
 header h1 {
-    font-size: 2.4rem;
+    font-size: 2.8rem; /* Larger font for better visibility */
     text-transform: uppercase;
-    letter-spacing: 3px;
-    font-weight: 600;
+    letter-spacing: 4px;
+    font-weight: 700;
     margin-bottom: 10px;
 }
 
 header:hover {
-    background-color: #333; /* Slightly lighter on hover */
+    background-color: #283a4c; /* Darken the background slightly on hover */
 }
 
 /* Navigation Bar */
@@ -49,7 +49,7 @@ nav ul {
     margin-top: 15px;
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 30px;
 }
 
 nav ul li {
@@ -57,17 +57,17 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #e0e0e0;
+    color: #f4f4f9; /* Lighter text color */
     text-decoration: none;
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 1.5px;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #ff6600; /* Futuristic orange for contrast */
-    transform: translateY(-5px);
+    color: #ff5733; /* Warm orange for contrast */
+    transform: translateY(-4px); /* Slight lift effect */
 }
 
 /* Cart Link in Header */
@@ -77,15 +77,15 @@ nav ul li a:hover {
     right: 30px;
     text-decoration: none;
     color: #fff;
-    font-weight: bold;
-    font-size: 1.5rem;
+    font-weight: 700;
+    font-size: 1.8rem;
 }
 
 .cart span {
     position: absolute;
     top: -5px;
     right: -10px;
-    background-color: #ff6600;
+    background-color: #ff5733;
     color: white;
     border-radius: 50%;
     padding: 5px 10px;
@@ -94,17 +94,17 @@ nav ul li a:hover {
 
 /* Shop Page Layout */
 section {
-    padding: 120px 20px 20px; /* Account for fixed header */
+    padding: 120px 20px 20px;
     max-width: 1200px;
     margin: 20px auto;
-    color: black; /* Change to black text for better contrast */
+    color: #333; /* Dark text for better readability */
 }
 
 section h2 {
     text-align: center;
     margin-bottom: 40px;
-    font-size: 2.5rem;
-    color: #fff;
+    font-size: 2.6rem;
+    color: #1f2a3d; /* Darker color for heading */
 }
 
 /* Product Grid */
@@ -112,38 +112,38 @@ section h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 30px;
+    gap: 25px;
     padding: 40px 0;
 }
 
 .product {
-    background-color: #222; /* Dark background for a sleek product card */
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    padding: 25px;
+    background-color: #ffffff; /* Light background for product cards */
+    border: 2px solid #f1f1f1;
+    border-radius: 12px;
+    padding: 20px;
     text-align: center;
     transition: all 0.3s ease;
     position: relative;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
     overflow: hidden;
-    width: calc(20% - 24px); /* Make each product take 20% of the available space */
+    width: calc(20% - 20px); /* Adjust for cleaner spacing */
 }
 
 .product:hover {
-    background: linear-gradient(135deg, #ff6600, #ffac33); /* Smooth gradient */
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-    transform: translateY(-5px); /* Slightly lift on hover */
+    background: linear-gradient(135deg, #ff5733, #ff9e4f); /* Smooth gradient */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-8px); /* Slight lift effect */
 }
 
 .product h3 {
-    font-size: 1.8rem;
-    color: #fff;
+    font-size: 1.7rem;
+    color: #333;
     margin-top: 20px;
 }
 
 .product p {
-    font-size: 1.4rem;
-    color: #e0e0e0;
+    font-size: 1.2rem;
+    color: #666;
 }
 
 .add-to-cart {
@@ -168,14 +168,16 @@ section h2 {
 /* Cart Section */
 #cart {
     background-color: #fff;
-    padding: 20px;
+    padding: 30px;
     margin-top: 40px;
     text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 #cart-quantity {
     font-weight: bold;
-    font-size: 22px;
+    font-size: 24px;
     color: #333;
 }
 
@@ -183,8 +185,8 @@ section h2 {
 .remove-from-cart {
     background-color: #dc3545;
     color: white;
-    padding: 10px 20px;
-    font-size: 1rem;
+    padding: 12px 25px;
+    font-size: 1.1rem;
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.3s ease;
@@ -201,7 +203,7 @@ section h2 {
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .product {
-        width: calc(50% - 24px); /* For tablets */
+        width: calc(50% - 20px); /* For tablets */
     }
 }
 
