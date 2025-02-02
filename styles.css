@@ -66,7 +66,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ff5733; /* Warm orange for contrast */
+    color: #e60ed7; /* Warm orange for contrast */
     transform: translateY(-4px); /* Slight lift effect */
 }
 
